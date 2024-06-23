@@ -1,0 +1,83 @@
+
+.custom-font {
+    font-family: 'Lato', sans-serif;
+}
+.image-container {
+    max-width: 90%; /* Điều chỉnh chiều rộng tối đa */
+    overflow: hidden; /* Ẩn phần thừa nếu ảnh vượt quá kích thước */
+}
+.col-md-9 {
+    background-color: rgb(198, 198, 194);
+    max-width: 800px; /* Điều chỉnh chiều rộng tối đa */
+    width: 100%; /* Chiều rộng tối đa 100% */
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+}
+.col-md-7 {
+    background-color:rgb(232, 232, 229);
+    max-width: 800px; /* Điều chỉnh chiều rộng tối đa */
+    width: 100%; /* Chiều rộng tối đa 100% */
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+}
+.col-md-8 {
+    background-color: rgb(246, 246, 224);
+    max-width: 400px; /* Điều chỉnh chiều rộng tối đa */
+    width: 100%; /* Chiều rộng tối đa 100% */
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+}
+
+.col-background {
+    background-color: rgb(232, 232, 229);
+    border-radius: 10px;
+    max-width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+ 
+.custom-list {
+    list-style-type: disc; /* Kiểu dạng bullet point (gạch tròn) */
+    padding-left: 20px; /* Khoảng cách từ bên trái */
+}
+
+.custom-list li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+} 
+#thankYouMessage2 {
+  display: none; 
+  color: orange;
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .navbar-nav {
+    padding-left: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    padding-left: 0;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .footer h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+}
+  
+  

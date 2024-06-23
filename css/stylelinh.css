@@ -1,0 +1,217 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+.navbar-brand {
+  color: orange;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.navbar-nav .nav-item {
+  font-weight: bold;
+  margin-left: 4rem;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: 0; 
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffbe33;
+}
+
+.navbar-toggler {
+  outline: none;
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  transition: all 0.3s;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Slideshow styles */
+.carousel-inner img {
+  width: 100%;
+  max-height: 650px;
+}
+
+.carousel-item img {
+  max-height: 650px;
+  object-fit: cover;
+}
+
+/* Post styles */
+.post {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.post-meta {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.post-content {
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-contact ul.social-icons {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul.social-icons li {
+  margin-right: 10px;
+}
+
+.footer-contact ul.social-icons li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.footer-form form {
+  margin-top: 15px;
+}
+
+.footer-form form .form-group {
+  margin-bottom: 15px;
+}
+
+.footer-form form .form-control {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-form form .form-control::placeholder {
+  color: #fff;
+}
+
+.footer-form form .btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-form form .btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer-button {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#thankYouMessage2 {
+  display: none; 
+  color: orange;
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .navbar-nav {
+    padding-left: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    padding-left: 0;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .footer h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+}

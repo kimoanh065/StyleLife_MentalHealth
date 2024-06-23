@@ -1,0 +1,733 @@
+/* General styles */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+
+.navbar-brand {
+  color: orange;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.navbar-nav .nav-item {
+  font-weight: bold;
+  margin-left: 4rem;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: 0; 
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffbe33;
+}
+
+.navbar-toggler {
+  outline: none;
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  transition: all 0.3s;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Slideshow styles */
+.carousel-inner img {
+  width: 100%;
+  max-height: 650px;
+}
+
+.carousel-item img {
+  max-height: 650px;
+  object-fit: cover;
+}
+
+/* Section 1 styles */
+#section1 {
+  margin-top: 10rem;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.post-preview {
+  text-align: center;
+}
+
+.post-preview .square-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.post-preview a {
+  color: black;
+  text-decoration: none;
+  width: 300px;
+}
+
+.post-preview a:hover {
+  color: orange;
+}
+
+.text-image {
+  width: 500px;
+}
+
+.post-preview .btn:hover {
+  background: #bfba55;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.post-preview .custom-button {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 30px;
+}
+
+.post-preview .custom-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Section 2 styles */
+#section2 {
+  margin-top: 7rem;
+}
+
+#row-post {
+  margin-bottom: 30px;
+}
+#post-title{
+  margin-bottom: 10px;
+}
+.post-title {
+  font-size: 3em;
+}
+
+.post-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.post-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.post-text {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.post-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.post-text a:hover {
+  color: orange;
+}
+
+.post-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.post-date,
+.post-comments {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Image container styles */
+#maxim {
+  margin-top: 8rem;
+}
+.image-container-maxim {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.maxim-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: top 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#image-maxim {
+  padding: 0;
+}
+
+/* About me section */
+.image-col {
+  background-color: #f7f1f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.image-col .image-container-about-me {
+  text-align: center;
+}
+
+.image-col .image-container-about-me .about-me-image {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.text-col {
+  margin: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-subtitle {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.profile-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.profile-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Gallery section */
+
+#container-gallery {
+  margin-top: 8rem;
+}
+.gallery-title {
+  margin-bottom: 5rem;
+  font-size: 3em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*Subcribe Form*/
+#subscription {
+  margin-top: 8rem;
+}
+.subscription-form {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.subscription-form h1 {
+  margin-bottom: 10px;
+  font-size: 3em;
+}
+.subscription-form p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+#subscriptionForm {
+  margin-top: 50px;
+}
+
+.subscription-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 20px;
+}
+.subscription-form .form-group {
+  text-align: left;
+  flex: 1;
+  padding: 0 20px;
+}
+.subscription-form .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+}
+.subscription-form .form-control:focus {
+  box-shadow: none;
+  border-bottom: 1px solid orange;
+}
+.subscription-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 70px;
+  width: 30%;
+}
+.subscription-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#thankYouMessage {
+  display: none; 
+  margin-top: 20px; 
+  font-size: 1.2em; 
+  color: orange;
+}
+/*End Subcribe*/
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-contact ul.social-icons {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul.social-icons li {
+  margin-right: 10px;
+}
+
+.footer-contact ul.social-icons li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.footer-form form {
+  margin-top: 15px;
+}
+
+.footer-form form .form-group {
+  margin-bottom: 15px;
+}
+
+.footer-form form .form-control {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-form form .form-control::placeholder {
+  color: #fff;
+}
+
+.footer-form form .btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-form form .btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer-button {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#thankYouMessage2 {
+  display: none; 
+  color: orange;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .navbar-nav {
+    padding-left: 60%;
+  }
+
+  .text-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .image-col, .text-col {
+    width: 50%;
+  }
+
+  .image-col {
+    flex: 1;
+  }
+
+  .text-col {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .text-col h1 {
+    font-size: 2rem;
+  }
+
+  .text-col p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    padding-left: 0;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin-left: 4rem;
+  }
+  .post-preview .square-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-image {
+    width: 100%;
+  }
+
+  .image-col {
+    height: auto;
+    padding: 20px;
+  }
+
+  .image-col .image-container-about-me .about-me-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .text-col {
+    width: 100%;
+    padding: 20px;
+  }
+
+  
+/* Recent Posts adjustments */
+  #section2 .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .post-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .post-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .post-text {
+    margin-left: 15px;
+  }
+
+  .image-col, .text-col {
+    width: 50%;
+  }
+
+  .image-col {
+    flex: 1;
+  }
+
+  .text-col {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .text-col h1 {
+    font-size: 2rem;
+  }
+
+  .text-col p {
+    font-size: 1.2rem;
+  }
+
+  .form-group.col-md-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .form-group.col-md-6:first-child {
+    padding-right: 10px;
+  }
+
+  .form-group.col-md-6:last-child {
+    padding-left: 10px;
+  }
+
+  .subscription-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 1.8rem;
+  }
+
+  .post-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .post-image {
+    max-width: 250px;
+    max-height: 250px;
+    width: 250px;
+    height: 250px;
+  }
+  .post-text {
+    margin-left: 10px;
+  }
+
+  .profile-title {
+    font-size: 32px;
+  }
+
+  .profile-description {
+    font-size: 14px;
+  }
+
+  .gallery-title {
+    font-size: 30px;
+  }
+
+  .gallery {
+    margin-left: 10px;
+  }
+
+  .image-col, .text-col {
+    width: 100%;
+  }
+
+  .image-col {
+    flex: 1;
+  }
+
+  .image-col .image-container-about-me .about-me-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .text-col {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .text-col h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-col p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 24px;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .post-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .post-date,
+  .post-comments {
+    font-size: 0.8rem;
+  }
+
+  .post-image {
+    max-width: 200px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-title {
+    font-size: 28px;
+  }
+
+  .profile-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-description {
+    font-size: 12px;
+  }
+
+  .image-col .image-container-about-me .about-me-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .gallery-title {
+    font-size: 28px;
+  }
+  .gallery-item {
+
+  }
+  .gallery-image {
+    width: 80%;
+    height: 80%;
+    margin: 38px;
+  }
+
+  .footer h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-group {
+    width: 100%;
+  }
+  .subscription-form {
+    width: 90%;
+  }
+  .subscription-button {
+    width: 40%;
+  }
+}

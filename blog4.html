@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Tải Google Fonts trước -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/stylelinh.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Vital Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="menu.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class="post">
+    <div class="post-title">
+    <span>Admin</span>
+    <span>May 1, 2023</span>
+    <span>2 min read</span>
+    </div>
+    <div class="post-meta">
+        Healthy and balanced lifestyle
+      
+    </div>
+    <div class="post-content">
+      <p><b>A healthy lifestyle is a lifestyle that has a good combination of eating, drinking, sleeping, and resting for each person. Creating for yourself a scientific diet, rest regimen combined with reasonable exercise will help the body always maintain good health and a comfortable spirit. Refer to the following 14 ways to maintain a healthy life!</b></p>
+      <img src="image/a4.jpg" alt="samurai" class="d-block w-100">
+      <p>A healthy lifestyle is a lifestyle that focuses on maintaining and improving an individual's overall health. This includes many important factors.</p>
+      <section>
+        <h2>Factors that help live a healthy life?</h2>
+        <p>First of all, people following a healthy lifestyle will prioritize a balanced and healthy diet. They will consume more fresh, minimally processed, nutritious foods, instead of foods high in fat, sugar and salt. In addition, drinking enough water and healthy drinks is also important.
+
+            Besides, regular exercise is an indispensable part of a healthy lifestyle. Activities such as walking, running, gym, yoga or sports will help improve overall health. The goal is to achieve a level of activity that is appropriate for your health and energy.
+            
+            Not only physical, mental health is also emphasized in a healthy lifestyle. Applying relaxation techniques such as meditation, listening to music or making time for leisure activities and personal hobbies will help manage stress and take care of your mental health. Building healthy social relationships is also important.
+            
+            Ultimately, ensuring adequate sleep and maintaining a healthy circadian rhythm are key to allowing the body to rest and recover. People who follow a healthy lifestyle will try to maintain a regular bedtime and waking routine, creating a comfortable sleeping environment.</p>
+
+      </section>
+    </div>
+  </div>
+
+  <footer class="footer mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-contact">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <h4>Xiao Zhan</h4>
+                    <p>123-456-7890<br>info@mysite.com<br>© 2024 by Xiao Zhan</p>
+                </div>
+                <div class="col-md-6 footer-form">
+                    <h4>Contact</h4>
+                    <p>Ask me anything</p>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Email *">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Leave Us a Message..."></textarea>
+                        </div>
+                        <button type="submit" class="footer-button">Submit</button>
+                    </form>
+                    <div id="thankYouMessage2">
+                        <i>Thanks for submitting!</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            // Hiển thị thông báo "Thank you"
+            var thankYouMessage = document.getElementById('thankYouMessage2');
+            thankYouMessage.style.display = 'inline';
+
+            // Ẩn thông báo sau 3 giây
+            setTimeout(function() {
+                thankYouMessage.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

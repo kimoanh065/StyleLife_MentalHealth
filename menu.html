@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Tải Google Fonts trước -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/stylephuc.css" rel="stylesheet">
+    <script>
+        function shareAlert() {
+            alert("Would you like to share this blog?");
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const shareLinks = document.querySelectorAll('.dropdown-content a');
+            shareLinks.forEach(function(link) {
+                link.addEventListener('click', shareAlert);
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Vital Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- danh sách blog -->
+    <main class="main">
+        <div class="container-fluid mt-5" id="section2">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Blog</h1>
+                            <a href="#" class="custom-button" style="color: inherit; text-decoration: none;">All Posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row-post">
+                <div class="col-md-6" id="post1">
+                    <form class="post">
+                        <div class="post-text">
+                            <a href="blog1.html"><img src="image/a1.jpg" alt="Post Image" class="post-image"></a>
+                            <div class="post-header">
+                                <img src="image/avatar.jpg" alt="Admin Avatar" class="avatar">
+                                <div class="admin-info">
+                                    <p class="post-date">Admin <br>May 1, 2023 • 2 min</p>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">&#8942;</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="blog1.html"><h3 class="post-subtitle">The one thing I would tell to my 16 year old self</h3>
+                            <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p></a>
+                            <hr>
+                            <p class="post-comments">0 comments</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form class="post">
+                        <div class="post-text">
+                            <a href="blog2.html"><img src="image/a2.jpg" alt="Post Image" class="post-image"></a>
+                            <div class="post-header">
+                                <img src="image/avatar.jpg" alt="Admin Avatar" class="avatar">
+                                <div class="admin-info">
+                                    <p class="post-date">Admin <br>May 1, 2023 • 2 min</p>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">&#8942;</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="blog2.html"><h3 class="post-subtitle">Can’t stop scrolling through your friends’ feed?</h3>
+                            <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p></a>
+                            <hr>
+                            <p class="post-comments">0 comments</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="post1">
+                    <form class="post">
+                        <div class="post-text">
+                            <a href="blog3.html"><img src="image/a3.jpg" alt="Post Image" class="post-image"></a>
+                            <div class="post-header">
+                                <img src="image/avatar.jpg" alt="Admin Avatar" class="avatar">
+                                <div class="admin-info">
+                                    <p class="post-date">Admin <br>May 1, 2023 • 2 min</p>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">&#8942;</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="blog3.html"><h3 class="post-subtitle">How I stopped being afraid of being weak</h3>
+                            <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p></a>
+                            <hr>
+                            <p class="post-comments">0 comments</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form class="post">
+                        <div class="post-text">
+                            <a href="blog4.html"><img src="image/a4.jpg" alt="Post Image" class="post-image"></a>
+                            <div class="post-header">
+                                <img src="image/avatar.jpg" alt="Admin Avatar" class="avatar">
+                                <div class="admin-info">
+                                    <p class="post-date">Admin <br>May 1, 2023 • 2 min</p>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">&#8942;</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="blog4.html"><h3 class="post-subtitle">5 great side effects of running with music</h3>
+                            <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences và entices your audience to continue reading....</p></a>
+                            <hr>
+                            <p class="post-comments">0 comments</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-contact">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <h4>Xiao Zhan</h4>
+                    <p>123-456-7890<br>info@mysite.com<br>© 2024 by Xiao Zhan</p>
+                </div>
+                <div class="col-md-6 footer-form">
+                    <h4>Contact</h4>
+                    <p>Ask me anything</p>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Email *">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Leave Us a Message..."></textarea>
+                        </div>
+                        <button type="submit" class="footer-button">Submit</button>
+                    </form>
+                    <div id="thankYouMessage2">
+                        <i>Thanks for submitting!</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            // Hiển thị thông báo "Thank you"
+            var thankYouMessage = document.getElementById('thankYouMessage2');
+            thankYouMessage.style.display = 'inline';
+
+            // Ẩn thông báo sau 3 giây
+            setTimeout(function() {
+                thankYouMessage.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

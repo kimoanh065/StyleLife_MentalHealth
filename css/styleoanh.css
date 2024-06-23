@@ -662,7 +662,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  .navbar-brand span {
+  .navbar-brand {
     font-size: 24px;
   }
 

@@ -78,6 +78,10 @@ body {
     padding: 0 5px;
 }
 
+#title {
+    
+}
+
 .post a {
     color: inherit;
     text-decoration: none;
@@ -247,7 +251,9 @@ body {
         padding-left: 0;
         text-align: center;
     }
-
+    #title {
+        margin-left: 10px;
+    }
     .main {
         flex-direction: column;
     }
@@ -285,6 +291,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    #title {
+        margin-left: 10px;
+    }
     .post-title {
         font-size: 1.8rem;
     }
@@ -312,7 +321,7 @@ body {
 }
 
 @media (max-width: 576px) {
-    .navbar-brand span {
+    .navbar-brand {
         font-size: 24px;
     }
     .post-title {
